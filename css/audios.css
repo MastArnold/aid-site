@@ -1,0 +1,132 @@
+.section-audio{
+    padding: 1.75rem 2.5rem;
+}
+
+.section-audio h1{
+    text-align: center;
+    margin : 2.5rem 0 1rem 0;
+    font-size: 2.3rem;
+    font-family: 'QuickSand';
+    font-weight: 400;
+}
+
+.section-audio hr{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section-audio .audios{
+    width: 100%;
+}
+
+.section-audio .audios .audio-container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 0.6rem;
+}
+
+.section-audio .audios .audio-container .audio{
+    display: flex;
+    gap:0.6rem;
+    background: var(--blue);
+    padding : 0.6rem;
+}
+
+.section-audio .audios .audio-container .audio .lecteur{
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.section-audio .audios .audio-container .audio .lecteur .ico{
+    width : 10vh;
+    height: auto;
+}
+
+.section-audio .audios .audio-container .audio .spectre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.4rem;
+    width: 40vw;
+}
+
+@keyframes spectre-bar{
+    0%{
+        transform: scaleY(0.1);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0.1);
+    }
+}
+
+.section-audio .audios .audio-container .audio .spectre .bar{
+    width: 1vh;
+    height: 7vh;
+    background: #393939;
+    transform: scaleY(0.1);
+}
+
+.section-audio .audios .audio-container .audio .spectre .bar.animation{
+    animation: spectre-bar 0.8s ease-in-out infinite;
+}
+
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 1)
+{
+    animation-delay: 0s;
+}
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 2)
+{
+    animation-delay: 0.2s;
+}
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 3)
+{
+    animation-delay: 0.4s;
+}
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 4)
+{
+    animation-delay: 0.6s;
+}
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 5)
+{
+    animation-delay: 0.8s;
+}
+.section-audio .audios .audio-container .audio .spectre .bar:nth-child(6n + 6)
+{
+    animation-delay: 1s;
+}
+
+.section-audio .audios .audio-container .audio .spectre .ico{
+    width: 100%;
+    height: auto;
+}
+
+.section-audio .audios .audio-container .author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 0.5rem;
+    flex-direction: column;
+}
+
+.section-audio .audios .audio-container .author .photo{
+    
+}
+
+.section-audio .audios .audio-container .author .photo img{
+    width: 8vh;
+    height: auto;
+}
+
+.section-audio .audios .audio-container .author .description{
+    font-family: 'QuickSand';
+}

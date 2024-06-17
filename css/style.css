@@ -1,0 +1,124 @@
+:root{
+    --yellow: #F8FAA1;
+    --blue: #D3EDFF;
+    --blue-pure: #12649e;
+    --black: #393939;
+    --z-index-aid-loader: 2040;
+    --z-index-confirm-sound: 2050;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.overyhidden{
+    overflow-y: hidden;
+}
+
+.hidden{
+    display: none;
+}
+
+header{
+    width: 100vw;
+    height: 75vh;
+    background-image: url('../assets/png/head.jpg');
+    background-position: 0% 10%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding : 1.75rem 2.5rem;
+}
+
+header .title-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .title-container .title{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 0.75rem;
+    font-family: "Moon Dance", cursive;
+}
+
+header .title-container .sub-title{
+    font-size: 1.95rem;
+    text-align: center;
+    color: var(--yellow);
+    font-family: "Moon Dance", cursive;
+}
+
+.dafirst{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin: 1rem 1.75rem;
+}
+
+.dafirst .wikipedia{
+    width: 40vw;
+    height: 60vh;
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    padding: 0 1.2rem;
+}
+
+.dafirst .carousel{
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+}
+
+.dafirst .carousel .content-list{
+
+}
+
+.dafirst .carousel .content-list .content{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.dafirst .carousel .content-list .content .img{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+.dafirst .carousel .content-list .content .text{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    width: 60%;
+    padding : 0.5rem;
+    background: rgba(255, 255, 255, 0.213);
+    backdrop-filter: blur(12px);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.dafirst .carousel .content-list .content:nth-child(1) .img{
+    background-image: url('../assets/png/photo-lune.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
